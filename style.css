@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  width: 100vw;
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+header {
+  background-color: black;
+}
+
+main {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.posters {
+  padding: 75px;
+  display: grid;
+  position: relative;
+  grid-template-columns: 7vw 7vw 7vw 7vw 7vw 7vw;
+  gap: 50px;
+}
+
+.poster {
+  background-color: rgb(0, 0, 0);
+  grid-column: span 2;
+  > img {
+    width: 100%;
+  }
+  > h1 {
+    padding-block: 15px;
+    font-size: 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  > button {
+    margin-top: 33px;
+    background-color: rgb(211, 72, 72);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    opacity: 0.8;
+  }
+  > p:after {
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quae porro assumenda eveniet alias rem veritatis odio cum eum.";
+  }
+  > button:after {
+    content: "Oh, take my money!";
+  }
+  > button:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+.poster-enlarged {
+  grid-column: span 3;
+  background-color: white;
+  color: black;
+  padding-bottom: 25px;
+  > h1,
+  p,
+  button {
+    margin-inline: 25px;
+  }
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+  background-color: rgb(25, 25, 25);
+  grid-template-columns: 15vw 15vw 15vw;
+  padding-block: 50px;
+  gap: 100px;
+  > article {
+    > h1 {
+      font-size: 33px;
+    }
+    > img {
+      padding-inline: 5px;
+    }
+  }
+}
