@@ -29,7 +29,7 @@ main {
   padding: 75px;
   display: grid;
   position: relative;
-  grid-template-columns: 7vw 7vw 7vw 7vw 7vw 7vw;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw;
   gap: 50px;
 }
 
