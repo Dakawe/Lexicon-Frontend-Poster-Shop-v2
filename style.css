@@ -100,6 +100,7 @@ footer {
 .poster {
   > img:hover {
     animation: enlarge 0.5s linear infinite;
+    cursor: pointer;
   }
 }
 
